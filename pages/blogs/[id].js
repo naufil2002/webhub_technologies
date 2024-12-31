@@ -8,7 +8,14 @@ import React from "react"
 const SinglePost = () => {
   const router = useRouter()
   const { id } = router.query
-  const post = blogdata.find((post) => post.id === parseInt(id))
+
+  // Check if id is available and find the post
+  const post = id ? blogdata.find((post) => post.id === parseInt(id)) : null
+
+  // If no post is found or data is unavailable, show a loading state or error
+  if (!post) {
+    return <p>Post not found or loading...</p>
+  }
 
   return (
     <>
@@ -36,7 +43,6 @@ const SinglePost = () => {
           <div className='heading-title'>
             <div className='desc'>
               <TitleSm title='Integer a justo vitae arcu fermentum...' />
-
               <p className='desc-p'> Phasellus nec tempor neque. In nec finibus lorem, in aliquet risus. Proin elit elit, cursus vel vulputate at, volutpat quis metus. Praesent at blandit tellus.</p>
               <p className='desc-p'>Morbi finibus velit erat, a pulvinar lacus mollis sit amet. Nulla iaculis convallis fermentum. Suspendisse eget elit mauris. Phasellus velit nisi, lobortis quis nisi et, venenatis finibus velit. Integer non nibh eget arcu malesuada ullamcorper! Quisque congue ante in consequat auctor. Morbi ut accumsan eros. Mauris semper suscipit mattis. Cras pellentesque a urna ac dictum. Pellentesque blandit, sapien vel faucibus accumsan, ante dui imperdiet nisi, ut tincidunt nulla tortor nec purus.</p>
               <p className='desc-p'>Suspendisse eget elit mauris. Phasellus velit nisi, lobortis quis nisi et, venenatis finibus velit. Integer non nibh eget arcu malesuada ullamcorper.</p>
