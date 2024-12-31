@@ -1,0 +1,83 @@
+header {
+  padding: $s 0;
+  border-bottom: 1px solid rgba($white, 0.2);
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  z-index: 999;
+
+  .container {
+    @include flex(center, space-between, none);
+    
+    nav {
+      a {
+        margin: 0 $xl-2;
+      }
+    }
+  }
+}
+
+.activeLink {
+  position: relative;
+  color: $green;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $green;
+  }
+}
+
+/* Hide the hamburger button by default */
+.menu-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 1012px) {
+  header {
+    nav {
+      display: none; // Hide the default navigation on smaller screens
+    }
+
+    .openMenu {
+      position: absolute;
+      top: 75px;
+      left: 0;
+      width: 100%;
+      height: 40vh;
+      padding: 20px;
+      background: $dark;
+      display: flex;
+      flex-direction: column;
+      z-index: 999;
+      
+      a {
+        width: 100%;
+        display: block;
+        margin-bottom: 30px !important;
+      }
+    }
+
+    /* Show the hamburger menu button only on small screens */
+    .menu-toggle {
+      display: inline-block; // Show button on small screens
+    }
+  }
+
+  .activeLink {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 801px) {
+  /* Hide the hamburger menu button on larger screens */
+  .menu-toggle {
+    display: none; // Hide button on large screens
+  }
+}
