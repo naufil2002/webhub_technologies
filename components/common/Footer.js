@@ -32,45 +32,48 @@ const Footer = () => {
             <span>
               Questions? Reach us <br /> Monday – Friday from 9 am to 6 pm
             </span>
-            <h3 className="footernumber">+1 001 234 5678</h3>
+            <h3 className="footernumber">+91 9834070695</h3>
             <button className="button-primary footerbtn">Request for quote</button>
           </motion.div>
 
           <motion.ul className="footercorrection" variants={fadeIn} initial="hidden" animate="visible">
             <h3>COMPANY</h3>
             <motion.li whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
-              <Link href="/">About agency</Link>
+              <Link href="/">Home</Link>
             </motion.li>
             <motion.li whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
-              <Link href="/">Our team</Link>
+              <Link href="/services">Services</Link>
             </motion.li>
             <motion.li whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
-              <Link href="/">Showcase</Link>
+              <Link href="/agency">About Us</Link>
             </motion.li>
             <motion.li whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
-              <Link href="/">Blog</Link>
+              <Link href="/showcase">Showcase</Link>
             </motion.li>
             <motion.li whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
-              <Link href="/">Demo design system</Link>
-            </motion.li>
-            <motion.li whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
-              <Link href="/">Contact</Link>
+              <Link href="/contact">Contact</Link>
             </motion.li>
           </motion.ul>
 
           <motion.ul className="footercorrection" variants={fadeIn} initial="hidden" animate="visible">
             <h3>SERVICES</h3>
             <motion.li whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
-              <Link href="/">Web Design & Development</Link>
-            </motion.li>
-            <motion.li whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
-              <Link href="/">Branding & Creative Services</Link>
-            </motion.li>
-            <motion.li whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
-              <Link href="/">Digital Marketing</Link>
+              <Link href="/">Web Development
+              </Link>
             </motion.li>
             <motion.li whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
               <Link href="/">E-Commerce</Link>
+            </motion.li>
+            <motion.li whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
+              <Link href="/">Responsive Design</Link>
+            </motion.li>
+            <motion.li whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
+              <Link href="/">Hosting & Domain
+              </Link>
+            </motion.li>
+            <motion.li whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
+              <Link href="/">Maintenance & Support
+              </Link>
             </motion.li>
           </motion.ul>
 
@@ -103,10 +106,10 @@ const Footer = () => {
 
         <motion.div className="legal connect py" variants={fadeIn} initial="hidden" animate="visible">
           <div className="text">
-            <span>© 2023 THE SEVEN. ALL RIGHTS RESERVED.</span>
+            <span>© 2025 THE SEVEN. ALL RIGHTS RESERVED.</span>
           </div>
           <div className="connect">
-            <span>GORKCODER COMPANY</span>
+            <span>WEBHUB TECHNOLOGIES</span>
             <span> &nbsp; | &nbsp; </span>
             <span>TERMS & CONDITIONS</span>
           </div>

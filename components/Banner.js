@@ -26,7 +26,7 @@ const Banner = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
-          <Title title="We are looking forward to start a new project" />
+          <TitleLogo title="We are looking forward to start a new project" />
           <br />
           <TitleLogo title="Let's take your business to the next level!" />
         </motion.div>

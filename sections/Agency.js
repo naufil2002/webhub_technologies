@@ -107,7 +107,7 @@ const Agency = () => {
             </div>
             <div className='right w-40 py'>
               <motion.img
-                src='/images/s1.jpg'
+                src='/images/s5.jpg'
                 alt='Web development team'
                 className='round'
                 width='100%'
@@ -122,7 +122,7 @@ const Agency = () => {
           <div className='content flex'>
             <div className='left w-40 py'>
               <motion.img
-                src='/images/s4.jpg'
+                src='/images/s6.jpg'
                 alt='Mission'
                 className='round'
                 width='100%'

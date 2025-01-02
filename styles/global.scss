@@ -136,7 +136,7 @@
   }
 
   .links {
-    @include flex(none, flex-end, none);
+    @include flex(none, center, none);
   }
 }
 
@@ -201,7 +201,7 @@ footer {
     display: block;
 
     &:hover {
-      color: $green;
+      color: rgb(211, 40, 211);
     }
   }
 
@@ -251,7 +251,7 @@ footer {
     margin-top: $xll;
     
     h1 {
-      font-size: $xl-6;
+      font-size: $xl-5;
     }
     
     .box {
@@ -379,6 +379,7 @@ footer {
       h1 {
         font-size: 30px;
       }
+      padding: 20px 20px 5px 20px;
     }
   }
 

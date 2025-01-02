@@ -58,9 +58,9 @@ const Expertise = () => {
         >
           <Title title="Our expertise" />
           <p>
-            Vivamus a ligula ut velit placerat egestas at id leo. Nulla ac
-            volutpat nunc. Suspendisse ut magna porttitor, sollicitudin ligula
-            at, molestie dolor.
+            We bring expertise in web development, user-focused design, and
+            performance-driven solutions. At WebHub Technologies, your digital
+            success is our priority.
           </p>
         </motion.div>
         <motion.div className="hero-content grid-4" layout>
@@ -84,7 +84,7 @@ const Expertise = () => {
                   transition: { duration: 0.3, ease: "easeInOut" },
                 }}
               >
-                <Card data={item} caption="learn more" />
+                <Card data={item} />
               </motion.div>
             )
           )}

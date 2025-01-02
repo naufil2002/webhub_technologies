@@ -56,57 +56,60 @@ export const expertise = [
 export const testimonial = [
   {
     id: 1,
-    name: "Alexander Black",
+    name: "Sameer Tutorials",
     cover: "../images/e1.jpg",
-    post: "Seven consulting - CEO",
-    desc: "Nunc fermentum - tempus erat ligula, sit amet lacinia justo cursus ac. Suspendisse quis nulla tincidunt! Lorem ipsum dolor amet at ornare ex, quis fringilla tortor! Nunc consectetur feugiat rutrum. Sed rhoncus sapien!",
+    post: "Founder & Educator",
+    desc: "The team’s support was invaluable in helping us achieve our goals. Their professionalism and dedication made a significant difference. I couldn't have asked for a better experience!",
   },
   {
     id: 2,
-    name: "Diana Green",
+    name: "EcoMart",
     cover: "../images/e2.jpg",
-    post: "Seven Arts - marketing manager",
-    desc: "Cras at ornare fermentum quam et tortor euismod, vel maximus metus tristique at ornare ex, quis fringilla tortor. Aenean semper neque quis consectetur lobortis. Quisque nec convallis ex. Aenean ut metus et nunc cursus aliquet.",
+    post: "E-commerce Manager",
+    desc: "I was impressed with their ability to understand our needs and deliver results that exceeded expectations. Their approach was tailored, efficient, and highly impactful.",
   },
   {
     id: 3,
-    name: "Alexander Black",
+    name: "Smart Trips",
     cover: "../images/e3.jpg",
-    post: "Seven consulting - CEO",
-    desc: "Nunc fermentum - tempus erat ligula, sit amet lacinia justo cursus ac. Suspendisse quis nulla tincidunt! Lorem ipsum dolor amet at ornare ex, quis fringilla tortor! Nunc consectetur feugiat rutrum. Sed rhoncus sapien!",
+    post: "Travel Consultant",
+    desc: "From the initial meeting to the final delivery, they demonstrated exceptional expertise. The project was completed on time and surpassed our expectations. A pleasure to work with!",
   },
   {
     id: 4,
-    name: "Diana Green",
+    name: "Naufil's Portfolio",
     cover: "../images/e4.jpg",
-    post: "Seven Arts - marketing manager",
-    desc: "Cras at ornare fermentum quam et tortor euismod, vel maximus metus tristique at ornare ex, quis fringilla tortor. Aenean semper neque quis consectetur lobortis. Quisque nec convallis ex. Aenean ut metus et nunc cursus aliquet.",
+    post: "Freelance Developer",
+    desc: "Collaborating with them was seamless and rewarding. Their ideas were fresh and innovative, and they were always ready to go the extra mile to ensure our satisfaction.",
   },
-]
+];
+
+
+
 export const showcase = [
   {
     id: 1,
-    title: "Neon Lights",
+    title: "Sameer Tutorials",
     cover: "../images/s1.jpg",
-    catgeory: "DIGITAL MARKETING",
+    catgeory: "EDUCATION PLATFORM",
   },
   {
     id: 2,
-    title: "Futuristic Furniture",
-    catgeory: "WEBSITES",
+    title: "EcoMart",
     cover: "../images/s2.jpg",
+    catgeory: "E-COMMERCE",
   },
   {
     id: 3,
-    title: "Smart Living",
+    title: "Smart Trips",
     cover: "../images/s3.jpg",
-    catgeory: "WEBSITES",
+    catgeory: "TRAVEL SOLUTIONS",
   },
   {
     id: 4,
-    title: "Light Painting",
+    title: "Freelancer Portfolio",
     cover: "../images/s4.jpg",
-    catgeory: "BRANDING	",
+    catgeory: "PERSONAL PORTFOLIO",
   },
   {
     id: 5,
@@ -121,6 +124,7 @@ export const showcase = [
     catgeory: "WEBSITES	",
   },
 ]
+
 export const brand = [
   {
     id: 1,
@@ -150,33 +154,35 @@ export const brand = [
 export const blogdata = [
   {
     id: 1,
-    title: "Ligula vel urna accumsan placerat",
+    title: "Top 5 Reasons Why Your Business Needs a Website",
     cover: "../images/b1.webp",
-    catgeory: "INDUSTRY",
+    category: "INDUSTRY",
     date: "JANUARY 12, 2023",
   },
   {
     id: 2,
-    title: "Don’t underestimate the lorem ipsum dolor amet",
+    title: "10 Tips to Improve Website Performance in 2025",
     cover: "../images/b2.jpg",
-    catgeory: "TIPS & TRICKS",
+    category: "TIPS & TRICKS",
     date: "OCTOBER 20, 2023",
   },
   {
     id: 3,
-    title: "Building the real VR lorem ipsum dolor amet glavrida from a scratch",
+    title: "How E-Commerce is Transforming the Retail Landscape",
     cover: "../images/b3.jpg",
-    catgeory: "TIPS & TRICKS",
+    category: "TIPS & TRICKS",
     date: "OCTOBER 9, 2023",
   },
   {
     id: 4,
-    title: "What eleifend posuere tincidunt",
+    title: "The Importance of Responsive Design in Modern Websites",
     cover: "../images/b4.jpg",
-    catgeory: "EVENTS",
+    category: "EVENTS",
     date: "OCTOBER 8, 2023",
   },
-]
+];
+
+
 export const teamdata = [
   {
     id: 1,

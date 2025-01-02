@@ -1,8 +1,8 @@
 @import "function";
 
 .title-logo {
-  font-size: $xl-6;
-  -webkit-text-stroke: 1px $white;
+  font-size: $xl-5;
+  -webkit-text-stroke: 1px $dark;
   color: transparent;
   span {
     font-size: $xl-5;
@@ -39,14 +39,38 @@
 .secondary-button,
 .button-primary {
   text-transform: capitalize;
-  color: $dark;
+  color: $white;
   padding: 13px 40px;
-  background-color: $green;
+  background: black;
   font-size: $md;
   border-radius: 50px;
   box-shadow: $shadow-md;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
+
+.button-primary::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(250deg, rgba(255, 85, 219, 1) 24%, rgba(52, 108, 255, 1) 100%);
+  transition: all 0.3s ease;
+}
+
+.button-primary:hover {
+  // color: #ff00cc;
+}
+
+.button-primary:hover::after {
+  width: 100%;
+}
+
+
 .secondary-button {
   background-color: #171e20;
   box-shadow: none;
@@ -155,7 +179,7 @@
   }
   .heading-title {
     max-width: 100%;
-    padding: 50px 0;
+    padding: 70px 0;
     margin-bottom: -80px;
   }
 }
