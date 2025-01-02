@@ -24,6 +24,7 @@
 .title {
   font-size: $xl-5;
   font-weight: 500;
+  margin-bottom: 50px;
   background: $gradient2;
   background-size: 100%;
   -webkit-background-clip: text;
@@ -67,7 +68,7 @@
   padding-top: $xl-6;
   padding-bottom: $xl-4;
   p {
-    margin: $xl-6 0;
+    margin: 5rem 0;
     color: rgba($white, 0.5);
   }
 }
@@ -155,5 +156,6 @@
   .heading-title {
     max-width: 100%;
     padding: 50px 0;
+    margin-bottom: -80px;
   }
 }

@@ -5,7 +5,16 @@ import { BiUserCircle } from "react-icons/bi";
 import { BsFacebook } from "react-icons/bs";
 import { FiHeadphones, FiHelpCircle } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
-import { motion } from "framer-motion"; // Import Framer Motion
+import { motion } from "framer-motion";
+
+const fadeIn = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.8, ease: "easeOut" },
+  },
+};
 
 const Contact = () => {
   return (
@@ -18,9 +27,6 @@ const Contact = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
             >
-              {/* <TitleSm title="CONTACT" />
-              <br />
-              <br /> */}
               <Title title="Let's start right now!" className="title-bg" />
             </motion.div>
           </div>
@@ -28,74 +34,55 @@ const Contact = () => {
             {/* Left Section */}
             <motion.div
               className="left w-full sm:w-1/2 lg:w-1/3"
-              initial={{ opacity: 0, x: -100 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, delay: 0.5 }}
+              initial="hidden"
+              animate="visible"
+              variants={fadeIn}
             >
               <div className="contact-deatils">
                 <div className="box">
                   <FiHeadphones size={30} className="icons" />
                   <h3>1-001-234-5678</h3>
-                  <span>Call us: Mon - Fri 9:00 - 19:00</span>
+                  <span className="fs">Call us: Mon - Fri 9:00 - 19:00</span>
                 </div>
                 <div className="box">
                   <IoLocationOutline size={30} className="icons" />
                   <h3>New York</h3>
-                  <span>990 Madison Ave, Midtown Manhattan, 2th Floor, NY 10022</span>
+                  <span className="fs">990 Madison Ave, Midtown Manhattan, 2th Floor, NY 10022</span>
                 </div>
                 <div className="box">
                   <FiHelpCircle size={30} className="icons" />
                   <h3>info@dream-theme.com</h3>
-                  <span>Drop us a line anytime!</span>
+                  <span className="fs">Drop us a line anytime!</span>
                 </div>
                 <div className="box">
                   <BiUserCircle size={30} className="icons" />
                   <h3>hr@dream-theme.com</h3>
-                  <span>Career at Seven Creative</span>
+                  <span className="fs">Career at Seven Creative</span>
                 </div>
               </div>
               <ul className="flex justify-center space-x-4">
-                <motion.li
-                  className="icon"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: 1.5 }}
-                >
+                <li className="icon">
                   <BsFacebook size={25} />
-                </motion.li>
-                <motion.li
-                  className="icon"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: 1.7 }}
-                >
+                </li>
+                <li className="icon">
                   <AiFillBehanceCircle size={25} />
-                </motion.li>
-                <motion.li
-                  className="icon"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: 1.9 }}
-                >
+                </li>
+                <li className="icon">
                   <AiFillInstagram size={25} />
-                </motion.li>
-                <motion.li
-                  className="icon"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: 2 }}
-                >
+                </li>
+                <li className="icon">
                   <AiFillLinkedin size={25} />
-                </motion.li>
+                </li>
               </ul>
             </motion.div>
 
             {/* Right Section */}
             <motion.div
               className="right w-full sm:w-1/2 lg:w-1/3"
-              initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, delay: 0.5 }}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              variants={fadeIn}
             >
               <TitleSm title="Make an online enquiry" />
               <p className="desc-p">Got questions? Ideas? Fill out the form below to get our proposal.</p>
@@ -124,7 +111,7 @@ const Contact = () => {
                 <div className="inputs">
                   <span style={{ fontSize: "14px" }}>TELL US A BIT ABOUT YOUR PROJECT*</span>
                   <textarea
-                  placeholder="Share a few details about your project"
+                    placeholder="Share a few details about your project"
                     cols="30"
                     rows="3"
                     style={{ height: "80px", fontSize: "14px", padding: "5px", resize: "none" }}

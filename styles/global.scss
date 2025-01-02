@@ -145,6 +145,7 @@
   img {
     opacity: 0.5;
     transition: 0.5s ease-in-out;
+    margin-bottom: 20px;
 
     &:hover {
       opacity: 1;
@@ -172,7 +173,7 @@
 
 footer {
   position: relative;
-  padding: $xll-3 0 0 0;
+  padding: $xll 0 0 0;
   border-top: 1px solid rgba($white, 0.2);
   overflow: visible; /* Change to visible */
   
@@ -206,10 +207,9 @@ footer {
 
   .connect {
     @include flex(center, space-between, none);
-    
     span {
       font-size: $sm;
-      letter-spacing: 2px;
+      // letter-spacing: 2px;
     }
   }
 
@@ -286,6 +286,7 @@ footer {
     ul {
       @include flex(center, space-between, none);
       margin-top: $xll;
+      margin-left: -40px;
     }
 
     .icon {
@@ -351,6 +352,13 @@ footer {
   }
 }
 
+
+// @media screen and (max-width: 400px) {
+//   .fs {
+//     font-size: 5px;
+//   }
+// }
+
 /* Single Page */
 .post-details {
   .heading-title {
@@ -361,7 +369,7 @@ footer {
 }
 
 /* Media Queries */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .banner {
     .container {
       @include flex(center, none, column);
@@ -412,6 +420,7 @@ footer {
 
   .contact {
     .content {
+      flex-direction: column;
       .left {
         padding-right: 0px;
         text-align: center;
@@ -422,16 +431,19 @@ footer {
           justify-content: center;
           align-items: center;
           li {
-            margin: 0 20px;
+            margin: 0 10px;
           }
         }
       }
 
       .right {
         margin-top: 0;
-        padding: 0 40px;
+        padding: 20px 40px;
       }
     }
+  }
+  .blogcard {
+    padding-top: 30px;
   }
 }
 
@@ -456,16 +468,32 @@ footer {
   background-image: linear-gradient(250deg, rgb(255, 85, 219) 24%, rgb(52, 108, 255) 100%);
   -webkit-background-clip: text;
   color: transparent;
-  // color: rgba(214, 7, 241, 0.8);
-  // border: 2px solid red;
-  // padding-top: ;
 }
-
-// .herotext {
-//   font-size: 5rem;
-// }
 
 .logo img {
   width: 100%;
   height: 20%;
+  // margin-left: -10px;
+}
+
+@media screen and (max-width: 930px) {
+  .footercorrection {
+   margin-left: -35px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .showcasecard {
+    margin-bottom: 50px;
+  }
+  .blogcard {
+    padding-bottom: 30px;
+  }
+  .footerbtn {
+    margin-bottom: 50px;
+  }
+}
+
+.footernumber{
+  margin-top: 10px;
 }

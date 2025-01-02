@@ -32,11 +32,11 @@ const Footer = () => {
             <span>
               Questions? Reach us <br /> Monday – Friday from 9 am to 6 pm
             </span>
-            <h3>+1 001 234 5678</h3>
-            <button className="button-primary">Request for quote</button>
+            <h3 className="footernumber">+1 001 234 5678</h3>
+            <button className="button-primary footerbtn">Request for quote</button>
           </motion.div>
 
-          <motion.ul variants={fadeIn} initial="hidden" animate="visible">
+          <motion.ul className="footercorrection" variants={fadeIn} initial="hidden" animate="visible">
             <h3>COMPANY</h3>
             <motion.li whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
               <Link href="/">About agency</Link>
@@ -58,7 +58,7 @@ const Footer = () => {
             </motion.li>
           </motion.ul>
 
-          <motion.ul variants={fadeIn} initial="hidden" animate="visible">
+          <motion.ul className="footercorrection" variants={fadeIn} initial="hidden" animate="visible">
             <h3>SERVICES</h3>
             <motion.li whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
               <Link href="/">Web Design & Development</Link>
@@ -74,25 +74,25 @@ const Footer = () => {
             </motion.li>
           </motion.ul>
 
-          <motion.ul variants={fadeIn} initial="hidden" animate="visible">
+          <motion.ul className="footercorrection" variants={fadeIn} initial="hidden" animate="visible">
             <h3>CONNECT</h3>
             <motion.div className="connect" variants={fadeIn} initial="hidden" animate="visible">
-              <motion.li whileHover={{ scale: 1.2 }} transition={{ duration: 0.3 }}>
+              <motion.li className="socialicon" whileHover={{ scale: 1.2 }} transition={{ duration: 0.3 }}>
                 <Link href="/">
                   <BsFacebook size={25} />
                 </Link>
               </motion.li>
-              <motion.li whileHover={{ scale: 1.2 }} transition={{ duration: 0.3 }}>
+              <motion.li className="socialicon" whileHover={{ scale: 1.2 }} transition={{ duration: 0.3 }}>
                 <Link href="/">
                   <AiFillBehanceCircle size={25} />
                 </Link>
               </motion.li>
-              <motion.li whileHover={{ scale: 1.2 }} transition={{ duration: 0.3 }}>
+              <motion.li className="socialicon" whileHover={{ scale: 1.2 }} transition={{ duration: 0.3 }}>
                 <Link href="/">
                   <AiFillInstagram size={25} />
                 </Link>
               </motion.li>
-              <motion.li whileHover={{ scale: 1.2 }} transition={{ duration: 0.3 }}>
+              <motion.li className="socialicon" whileHover={{ scale: 1.2 }} transition={{ duration: 0.3 }}>
                 <Link href="/">
                   <AiFillLinkedin size={25} />
                 </Link>

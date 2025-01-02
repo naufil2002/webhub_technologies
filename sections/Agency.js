@@ -105,7 +105,7 @@ const Agency = () => {
                 </div>
               </div>
             </div>
-            <div className='right w-40 ml'>
+            <div className='right w-40 py'>
               <motion.img
                 src='/images/s1.jpg'
                 alt='Web development team'

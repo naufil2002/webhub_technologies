@@ -34,7 +34,7 @@ const BlogCard = () => {
         >
           <div className="cool-card-content">
             <Card data={item} path="blogs" />
-            <div className="hover-overlay">
+            <div className="hover-overlay blogcard">
               <h3>Explore</h3>
               <p>Click to learn more about this post.</p>
             </div>

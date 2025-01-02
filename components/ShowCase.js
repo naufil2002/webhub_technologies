@@ -41,7 +41,7 @@ const ShowCase = () => {
           {showcase.map((item, index) => (
             <motion.div
               key={item.id}
-              className="card-wrapper cool-card"
+              className="card-wrapper showcasecard cool-card"
               variants={cardVariant}
               initial="hidden"
               whileInView="visible"
