@@ -3,6 +3,8 @@ import { Title } from "./common/Title";
 import { expertise } from "@/assets/data/dummydata";
 import { Card } from "./common/Card";
 import { motion } from "framer-motion";
+import { HiOutlineArrowRight } from "react-icons/hi";
+import Link from "next/link";
 
 const Expertise = () => {
   // Animation variants for the heading (Fade In + Rotate)
@@ -90,6 +92,11 @@ const Expertise = () => {
           )}
         </motion.div>
       </div>
+        <div className="card btnhover textcenter links">
+          <Link href="/services">
+            View All Services <HiOutlineArrowRight className="link-icon" />
+          </Link>
+        </div>
     </section>
   );
 };

@@ -6,7 +6,7 @@ import { BiUser } from "react-icons/bi"
 export const home = [
   {
     icon: <AiOutlineCalendar size={25} />,
-    title: "10+ years of market experience",
+    title: "1+ years of development experience",
   },
   {
     icon: <TfiRulerPencil size={25} />,
@@ -14,13 +14,14 @@ export const home = [
   },
   {
     icon: <VscFileSubmodule size={25} />,
-    title: "100+ cuccessful cases in portfolio",
+    title: "Many successful projects with satisfied clients",
   },
   {
     icon: <BiUser size={25} />,
     title: "Customer satisfaction is our top priority",
   },
 ]
+
 export const expertise = [
   {
     id: 1,
@@ -89,41 +90,48 @@ export const testimonial = [
 export const showcase = [
   {
     id: 1,
-    title: "Sameer Tutorials",
-    cover: "../images/s1.jpg",
-    catgeory: "EDUCATION PLATFORM",
-  },
-  {
-    id: 2,
     title: "EcoMart",
     cover: "../images/s2.jpg",
     catgeory: "E-COMMERCE",
+    projectLink: "https://eco-mart-chi.vercel.app/", // Add the link here
+  },
+  {
+    id: 2,
+    title: "Sameer Tutorials",
+    cover: "../images/s1.jpg",
+    catgeory: "EDUCATION PLATFORM",
+    projectLink: "https://sameertutorials.vercel.app/", // Add the link here
   },
   {
     id: 3,
-    title: "Smart Trips",
-    cover: "../images/s3.jpg",
-    catgeory: "TRAVEL SOLUTIONS",
+    title: "Apna Hotel",
+    cover: "../images/s5.jpg",
+    catgeory: "RESTAURENT",
+    projectLink: "https://naufil2002.github.io/apna_hotel/", // Add the link here
   },
   {
     id: 4,
+    title: "Smart Trips",
+    cover: "../images/s3.jpg",
+    catgeory: "TRAVEL SOLUTIONS",
+    projectLink: "https://smarttrips.vercel.app/", // Add the link here
+  },
+  {
+    id: 5,
     title: "Freelancer Portfolio",
     cover: "../images/s4.jpg",
     catgeory: "PERSONAL PORTFOLIO",
+    projectLink: "https://naufils-portfolio.vercel.app/", // Add the link here
   },
   {
-    id: 5,
-    title: "Ideabox",
-    cover: "../images/s5.jpg",
-    catgeory: "BRANDING	",
-  },
-  {
-    id: 5,
-    title: "VR Experience",
+    id: 6,
+    title: "Music School",
     cover: "../images/s6.jpg",
-    catgeory: "WEBSITES	",
+    catgeory: "MUSIC PLATFORM",
+    projectLink: "https://music-school-five-sand.vercel.app/", // Add the link here
   },
-]
+];
+
 
 export const brand = [
   {
@@ -155,7 +163,7 @@ export const blogdata = [
   {
     id: 1,
     title: "Top 5 Reasons Why Your Business Needs a Website",
-    cover: "../images/b1.webp",
+    cover: "../images/b1.jpg",
     category: "INDUSTRY",
     date: "JANUARY 12, 2023",
   },

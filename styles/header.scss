@@ -1,21 +1,48 @@
-header {
-  // padding: $s 0;
-  border-bottom: 1px solid rgba($white, 0.2);
-  position: sticky;
+/* Header Styles */
+.header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);  /* Border for header separation */
+  position: relative;  /* Default position */
   top: 0;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);  /* Apply blur effect */
   z-index: 999;
+  transition: background-color 0.3s, box-shadow 0.3s;  /* Smooth transition for background and shadow */
+  background-color: transparent;  /* Default background */
+}
 
-  .container {
-    @include flex(center, space-between, none);
-    margin-right: 70px;
-    nav {
-      a {
-        margin: 0 $xl-2;
-      }
-      margin-top: 15px;
-    }
+.header-with-scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;  /* Adjust the height of the sticky header */
+  // background: rgba(0, 0, 0, 0.8);  /* Dark background when sticky */
+  z-index: 2000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Box shadow when sticky */
+  animation: headerSlideDown 0.95s ease-in-out forwards;  /* Animation for smooth transition */
+}
+
+@keyframes headerSlideDown {
+  0% {
+    top: -85px;  /* Initially, the header is off-screen */
   }
+  100% {
+    top: 0;  /* Header slides down to its final position */
+  }
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 70px;
+  margin-bottom: -17px;
+}
+
+nav {
+  a {
+    margin: 0 15px;
+  }
+  margin-top: -15px;
 }
 
 .activeLink {
@@ -33,12 +60,13 @@ header {
   }
 }
 
+
 /* Hide the hamburger button by default */
 .menu-toggle {
   display: none;
 }
 
-@media screen and (max-width: 1012px) {
+@media screen and (max-width: 1026px) {
   header {
     nav {
       display: none; // Hide the default navigation on smaller screens
@@ -46,7 +74,7 @@ header {
 
     .openMenu {
       position: absolute;
-      top: 65px;
+      top: 85px;
       left: 0;
       width: 100%;
       // height: 58vh;
@@ -95,3 +123,11 @@ header {
     display: none; // Hide button on large screens
   }
 }
+
+.headerlogo img {
+  margin-top: -10px;
+  width: auto; /* Maintain original aspect ratio */
+  height: 90px; /* Set a fixed height or adjust as needed */
+  // display: block;
+}
+

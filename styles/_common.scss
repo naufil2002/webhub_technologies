@@ -62,10 +62,6 @@
   transition: all 0.3s ease;
 }
 
-.button-primary:hover {
-  // color: #ff00cc;
-}
-
 .button-primary:hover::after {
   width: 100%;
 }
@@ -90,7 +86,7 @@
   max-width: 65%;
   margin: auto;
   padding-top: $xl-6;
-  padding-bottom: $xl-4;
+  // padding-bottom: $xl-2;
   p {
     margin: 5rem 0;
     color: rgba($white, 0.5);

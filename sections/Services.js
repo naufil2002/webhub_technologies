@@ -18,7 +18,7 @@ const Services = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1 }}
+            transition={{ duration: 1 }}
           >
             <Title title="Unique technologies & modern approach" className="title-bg" />
           </motion.div>
@@ -50,7 +50,7 @@ const CardWithAnimation = ({ item }) => {
         opacity: inView ? 1 : 0, // Trigger animation based on inView status
         y: inView ? 0 : 20, // Move the card to its normal position when in view
       }}
-      transition={{ duration: 1, delay: 0.5 }} // Transition delay for smooth animation
+      transition={{ duration: 1.5 }} // Transition delay for smooth animation
     >
       <Card data={item} caption={item.post} />
     </motion.div>

@@ -30,6 +30,7 @@ export const Card = ({ data, caption, show, path }) => {
             </ul>
           )}
         </div>
+        
       </div>
     </>
   )

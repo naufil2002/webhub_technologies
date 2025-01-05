@@ -52,7 +52,7 @@ const Agency = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 0.4 }}
               >
-                <TitleSm title='Transforming ideas into dynamic web solutions since 2001' />
+                <TitleSm title='Transforming ideas into dynamic web solutions' />
               </motion.div>
               <motion.p
                 className='desc-p'
@@ -72,7 +72,7 @@ const Agency = () => {
                       animate={{ opacity: 1 }}
                       transition={{ duration: 1 }}
                     >
-                      <CountUp start={0} end={10} duration={3} />+
+                      <CountUp start={0} end={1} duration={3} />+
                     </motion.h1>
                   )}
                   <h3>Years of web development experience</h3>
@@ -85,7 +85,7 @@ const Agency = () => {
                       animate={{ opacity: 1 }}
                       transition={{ duration: 1 }}
                     >
-                      <CountUp start={0} end={50} duration={3} />+
+                      <CountUp start={0} end={10} duration={3} />+
                     </motion.h1>
                   )}
                   <h3>Successful website launches</h3>
@@ -98,16 +98,16 @@ const Agency = () => {
                       animate={{ opacity: 1 }}
                       transition={{ duration: 1 }}
                     >
-                      <CountUp start={0} end={12} duration={3} />+
+                      <CountUp start={0} end={15} duration={3} />+
                     </motion.h1>
                   )}
-                  <h3>Web industry awards</h3>
+                  <h3>Web development achievements</h3>
                 </div>
               </div>
             </div>
             <div className='right w-40 py'>
               <motion.img
-                src='/images/s5.jpg'
+                src='/images/aboutus1.jpg'
                 alt='Web development team'
                 className='round'
                 width='100%'
@@ -122,7 +122,7 @@ const Agency = () => {
           <div className='content flex'>
             <div className='left w-40 py'>
               <motion.img
-                src='/images/s6.jpg'
+                src='/images/aboutus2.jpg'
                 alt='Mission'
                 className='round'
                 width='100%'

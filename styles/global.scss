@@ -138,6 +138,7 @@
   .links {
     @include flex(none, center, none);
   }
+  margin-bottom: 50px;
 }
 
 /* Brand */
@@ -173,7 +174,7 @@
 
 footer {
   position: relative;
-  padding: $xll 0 0 0;
+  padding: $xl-5 0 0 0;
   border-top: 1px solid rgba($white, 0.2);
   overflow: visible; /* Change to visible */
   
@@ -211,6 +212,10 @@ footer {
       font-size: $sm;
       // letter-spacing: 2px;
     }
+  }
+
+  .legal {
+    display: flex;
   }
 
   &::after {
@@ -317,7 +322,7 @@ footer {
   .right {
     border-radius: 50px 0 50px 0;
     padding: $xl-6;
-    margin-top: -250px;
+    // margin-top: -250px;
     background-color: #171e20;
     height: 100%;
 
@@ -471,12 +476,6 @@ footer {
   color: transparent;
 }
 
-.logo img {
-  width: 100%;
-  height: 20%;
-  // margin-left: -10px;
-}
-
 @media screen and (max-width: 930px) {
   .footercorrection {
    margin-left: -35px;
@@ -493,8 +492,37 @@ footer {
   .footerbtn {
     margin-bottom: 50px;
   }
+  .btnhover {
+    margin-bottom: 50px;
+  }
 }
 
 .footernumber{
   margin-top: 10px;
+}
+
+.btnhover {
+  :hover {
+    color: rgb(211, 40, 211);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .legal {
+    flex-direction: column;
+  }
+}
+
+.footerlogo img {
+  margin-top: -15px;
+  width: auto; /* Maintain original aspect ratio */
+  height: 100px; /* Set a fixed height or adjust as needed */
+  // display: block;
+}
+
+.textcenter {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;    /* Centers vertically (if needed) */
+  margin-top: 20px;       /* Adds spacing above the button */
 }
