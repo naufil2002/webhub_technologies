@@ -47,7 +47,7 @@ const Footer = () => {
             </span>
             <h3 className="footernumber">+91 9834070695</h3>
             <button className="button-primary footerbtn">
-              Request for quote
+            Empower Your Business
             </button>
           </motion.div>
 

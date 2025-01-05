@@ -39,7 +39,7 @@ const Banner = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
-          <button className="button-primary">Request a call-back</button>
+          <button className="button-primary">Empower Your Business</button>
         </motion.div>
       </div>
     </section>
