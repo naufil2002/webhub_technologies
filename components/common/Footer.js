@@ -201,7 +201,7 @@ const Footer = () => {
           animate="visible"
         >
           <div className="text">
-            <span>© 2025 THE SEVEN. ALL RIGHTS RESERVED.</span>
+            <span>© 2025 ALL RIGHTS RESERVED</span>
           </div>
           <div className="connect">
             <span>WEBHUB TECHNOLOGIES</span>

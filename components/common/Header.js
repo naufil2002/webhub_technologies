@@ -45,9 +45,9 @@ const Header = () => {
           />
         </div>
         <nav
-          className={open ? "openMenu" : "closeMenu"}
-          onClick={() => setOpen(false)}
-        >
+  className={`openMenu ${open ? "active" : ""}`}
+  onClick={() => setOpen(false)}
+>
           <Link href="/" className={activeLink == "/" ? "activeLink" : ""}>
             Home
           </Link>

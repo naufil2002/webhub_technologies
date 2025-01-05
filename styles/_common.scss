@@ -34,8 +34,16 @@
 }
 .title-bg {
   font-size: 40px;
-  margin-top: 20px;
+  // margin-top: 20px;
+  margin-bottom: 10px;
 }
+
+.title-bgservice {
+  font-size: 40px;
+  // margin-top: 20px;
+  // margin-bottom: 70px;
+}
+
 .secondary-button,
 .button-primary {
   text-transform: capitalize;
@@ -175,7 +183,17 @@
   }
   .heading-title {
     max-width: 100%;
-    padding: 70px 0;
+    padding: 20px 0px 20px 0px;
     margin-bottom: -80px;
+  }
+  .title-bgservice {
+    font-size: 35px;
+    // margin-top: 20px;
+    margin-bottom: 70px;
+  }
+  .title-bg {
+    font-size: 35px;
+    // margin-top: 20px;
+    margin-bottom: 50px;
   }
 }

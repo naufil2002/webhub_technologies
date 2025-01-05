@@ -20,7 +20,7 @@ const Services = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <Title title="Unique technologies & modern approach" className="title-bg" />
+            <Title title="Unique technologies & modern approach" className="title-bgservice" />
           </motion.div>
         </motion.div>
 
