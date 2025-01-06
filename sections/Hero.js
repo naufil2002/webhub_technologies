@@ -3,7 +3,7 @@ import Banner from "@/components/Banner";
 import Expertise from "@/components/Expertise";
 import ShowCase from "@/components/ShowCase";
 import Testimonial from "@/components/Testimonial";
-import { Title, TitleSm } from "@/components/common/Title";
+import { Title } from "@/components/common/Title";
 import { BlogCard, Brand } from "@/components/router";
 import React from "react";
 import { motion } from "framer-motion";
@@ -41,6 +41,22 @@ const Hero = () => {
   return (
     <>
       <motion.section className="hero" initial="hidden" animate="visible">
+        <video
+          className="background-video"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+        >
+          <source src="../images/herovideo.mp4" type="video/mp4" />
+          <source
+            src="../images/herovideo-mobile.mp4"
+            media="(max-width: 768px)"
+          />
+          Your browser does not support the video tag.
+        </video>
+
         <motion.div
           className="container newhero"
           initial={{ opacity: 0 }}
@@ -48,7 +64,6 @@ const Hero = () => {
           transition={{ duration: 1 }}
         >
           BUILDING WEBSITES THAT BUILD YOUR BUSINESS
-
         </motion.div>
       </motion.section>
 
