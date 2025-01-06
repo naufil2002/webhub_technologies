@@ -3,7 +3,7 @@ import Banner from "@/components/Banner";
 import Expertise from "@/components/Expertise";
 import ShowCase from "@/components/ShowCase";
 import Testimonial from "@/components/Testimonial";
-import { Title, TitleSm } from "@/components/common/Title";
+import { Title } from "@/components/common/Title";
 import { BlogCard, Brand } from "@/components/router";
 import React from "react";
 import { motion } from "framer-motion";
@@ -41,6 +41,16 @@ const Hero = () => {
   return (
     <>
       <motion.section className="hero" initial="hidden" animate="visible">
+        <video
+          className="background-video"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src="../images/herovideo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <motion.div
           className="container newhero"
           initial={{ opacity: 0 }}
@@ -48,7 +58,6 @@ const Hero = () => {
           transition={{ duration: 1 }}
         >
           BUILDING WEBSITES THAT BUILD YOUR BUSINESS
-
         </motion.div>
       </motion.section>
 
@@ -71,7 +80,7 @@ const Hero = () => {
               At WebHub Technologies, we specialize in crafting innovative web
               solutions and optimizing online visibility. Whether you're a
               startup or an established business, our team ensures your digital
-              presence resonates with your audience and drives results
+              presence resonates with your audience and drives results.
             </p>
           </motion.div>
 
