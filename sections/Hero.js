@@ -41,7 +41,7 @@ const Hero = () => {
   return (
     <>
       <motion.section className="hero" initial="hidden" animate="visible">
-        {/* <video
+        <video
           className="background-video"
           autoPlay
           muted
@@ -55,7 +55,7 @@ const Hero = () => {
             media="(max-width: 768px)"
           />
           Your browser does not support the video tag.
-        </video> */}
+        </video>
 
         <motion.div
           className="container newhero"
