@@ -47,10 +47,14 @@ const Hero = () => {
           muted
           loop
           playsInline
+          preload="auto"
         >
           <source src="../images/herovideo.mp4" type="video/mp4" />
+          <source src="../images/herovideo.webm" type="video/webm" />
+          <source src="../images/herovideo.ogv" type="video/ogg" />
           Your browser does not support the video tag.
         </video>
+
         <motion.div
           className="container newhero"
           initial={{ opacity: 0 }}
