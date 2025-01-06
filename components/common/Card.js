@@ -10,9 +10,9 @@ export const Card = ({ data, caption, show, path }) => {
           <img src={data.cover} alt={data.title} />
         </div>
         <div className='card-details'>
-          <Link href={`${path}/${data.id}`} className='title-link'>
+          <div className='title-link'>
             <TitleSm title={data.title} />
-          </Link>
+          </div>
           {caption && (
             <Link href={`${path}/${data.id}`}>
               {caption} <HiOutlineArrowRight className='link-icon' />

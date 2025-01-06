@@ -50,7 +50,7 @@ export const expertise = [
   {
     id: 5,
     title: "Maintenance & Support",
-    cover: "../images/e4.jpg",
+    cover: "../images/e5.jpg",
     desc: [{ text: "24/7 support" }, { text: "Regular updates" }, { text: "Performance boost" }],
   },
 ]
