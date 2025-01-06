@@ -41,7 +41,7 @@ const Hero = () => {
   return (
     <>
       <motion.section className="hero" initial="hidden" animate="visible">
-        <video
+        {/* <video
           className="background-video"
           autoPlay
           muted
@@ -55,7 +55,7 @@ const Hero = () => {
             media="(max-width: 768px)"
           />
           Your browser does not support the video tag.
-        </video>
+        </video> */}
 
         <motion.div
           className="container newhero"
@@ -86,7 +86,7 @@ const Hero = () => {
               At WebHub Technologies, we specialize in crafting innovative web
               solutions and optimizing online visibility. Whether you're a
               startup or an established business, our team ensures your digital
-              presence resonates with your audience and drives results.
+              presence resonates with your audience and drives results
             </p>
           </motion.div>
 
