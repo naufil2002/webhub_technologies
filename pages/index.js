@@ -12,6 +12,9 @@ export default function Home() {
         <meta property="og:image" content="/logo.png" />
         <meta property="og:url" content="https://webhubtechnologies.in" />
         <meta property="og:type" content="website" />
+
+        {/* Simplified Favicon */}
+        <link rel="icon" href="/logo.png" />
       </Head>
       <Hero />
     </>
