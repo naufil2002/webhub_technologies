@@ -13,7 +13,7 @@
   position: relative;
 
   // Remove the background image from ::before and replace with video
-  .background-video {
+  .background-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -23,14 +23,15 @@
     z-index: -1;
     pointer-events: none;
   }
-
+  
   .hero-title {
     font-size: $xll-3;
     line-height: 115px;
     font-weight: 600;
     position: relative;
-    z-index: 1; // Ensures text is above the video
+    z-index: 1; /* Ensures text is above the image */
   }
+  
 
   .sub-heading {
     display: flex;

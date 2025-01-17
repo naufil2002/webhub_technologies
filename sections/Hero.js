@@ -41,19 +41,12 @@ const Hero = () => {
   return (
     <>
       <motion.section className="hero" initial="hidden" animate="visible">
-        <video
-          className="background-video"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-        >
-          <source src="../images/herovideo.mp4" type="video/mp4" />
-          <source src="../images/herovideo.webm" type="video/webm" />
-          <source src="../images/herovideo.ogv" type="video/ogg" />
-          Your browser does not support the video tag.
-        </video>
+        <img
+          className="background-image"
+          src="../images/bgimg.png"
+          alt="Hero background"
+          loading="lazy"
+        />
 
         <motion.div
           className="container newhero"
