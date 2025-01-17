@@ -14,7 +14,7 @@ export default function Home() {
         <meta property="og:type" content="website" />
 
         {/* Simplified Favicon */}
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/safeimagekit-logo.png" />
       </Head>
       <Hero />
     </>

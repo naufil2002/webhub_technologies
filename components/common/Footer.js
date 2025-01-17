@@ -43,9 +43,14 @@ const Footer = () => {
               />
             </div>
             <span>
-              Questions? Reach us <br /> Monday – Friday from 9 am to 6 pm
+              Questions? Reach us <br /> 24/7
             </span>
-            <h3 className="footernumber">+91 9834070695</h3>
+            <h3 className="footernumber">
+  <a href="tel:+919834070695" style={{ textDecoration: 'none', color: 'inherit' }}>
+    +91 9834070695
+  </a>
+</h3>
+
             <button className="button-primary footerbtn">
             Empower Your Business
             </button>
