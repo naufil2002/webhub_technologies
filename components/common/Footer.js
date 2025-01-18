@@ -157,7 +157,7 @@ const Footer = () => {
                 transition={{ duration: 0.3 }}
               >
                 <Link
-                  href="https://www.instagram.com"
+                  href="https://www.instagram.com/webhubtechnologies.in"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -187,7 +187,7 @@ const Footer = () => {
                 transition={{ duration: 0.3 }}
               >
                 <Link
-                  href="mailto:webhubtechnologi3s@gmail.com"
+                  href="mailto:webhubtechnologies.in@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

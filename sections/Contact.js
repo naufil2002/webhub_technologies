@@ -109,10 +109,10 @@ const Contact = () => {
                   <BiUserCircle size={30} className="icons" />
                   <h3>
                     <a
-                      href="mailto:webhubtechnologi3s@gmail.com"
+                      href="mailto:webhubtechnologies.in@gmail.com"
                       className="contact-link"
                     >
-                      webhubtechnologi3s@gmail.com
+                      webhubtechnologies.in@gmail.com
                     </a>
                   </h3>
                   <span className="fs">Drop us a line anytime!</span>
