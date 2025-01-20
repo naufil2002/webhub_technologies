@@ -1,21 +1,28 @@
-import Head from 'next/head';
+import Head from "next/head";
 import { Hero } from "@/sections";
+import { NextSeo } from "next-seo";
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Web Hub Technologies</title>
-        <meta name="description" content="Empowering Your Digital Journey" />
-        <meta property="og:title" content="Web Hub Technologies" />
-        <meta property="og:description" content="Empowering Your Digital Journey" />
-        <meta property="og:image" content="/logo.png" />
-        <meta property="og:url" content="https://webhubtechnologies.in" />
-        <meta property="og:type" content="website" />
-
-        {/* Simplified Favicon */}
-        <link rel="icon" href="/safeimagekit-logo.png" />
-      </Head>
+      <NextSeo
+        title="Home - Web Hub Technologies"
+        description="Empowering Your Digital Journey with Web Development and SEO Services."
+        openGraph={{
+          url: "https://webhubtechnologies.in",
+          title: "Home - Web Hub Technologies",
+          description: "Empowering Your Digital Journey.",
+          images: [
+            {
+              url: "/logo.png",
+              width: 800,
+              height: 600,
+              alt: "Web Hub Technologies Logo",
+            },
+          ],
+          site_name: "Web Hub Technologies",
+        }}
+      />
       <Hero />
     </>
   );

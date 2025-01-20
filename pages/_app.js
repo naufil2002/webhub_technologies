@@ -1,6 +1,8 @@
 import Layout from "@/components/common/Layout";
 import "@/styles/main.scss"; // Ensure global styles are imported
 import { useEffect, useState } from "react";
+import { DefaultSeo } from "next-seo";
+import SEO from "../next-seo.config";
 
 export default function App({ Component, pageProps }) {
   const [isLoading, setIsLoading] = useState(true);
@@ -16,13 +18,13 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
+      <DefaultSeo {...SEO} />
       {/* Preloader */}
       {isLoading && (
         <div id="preloader">
           <div className="logo-animation">
-            {/* Replace with your logo */}
             <img src="/logo.png" alt="Logo" />
-            <span class="gradient-text">Welcome to Our Website</span>
+            <span className="gradient-text">Welcome to Our Website</span>
           </div>
         </div>
       )}

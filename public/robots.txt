@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.webhubtechnologies.in
+
+# Sitemaps
+Sitemap: https://www.webhubtechnologies.in/sitemap.xml
