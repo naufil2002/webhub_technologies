@@ -14,7 +14,7 @@ export default function Home() {
           description: "Empowering Your Digital Journey.",
           images: [
             {
-              url: "/logo.png",
+              url: "../public/logo.png",
               width: 800,
               height: 600,
               alt: "Web Hub Technologies Logo",

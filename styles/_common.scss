@@ -1,9 +1,10 @@
 @import "function";
 
 .title-logo {
+  font-family: cur;
   font-size: $xl-5;
   -webkit-text-stroke: 1px $dark;
-  color: transparent;
+  color: black;
   span {
     font-size: $xl-5;
     -webkit-text-stroke: $green;

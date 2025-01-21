@@ -6,6 +6,7 @@ import SEO from "../next-seo.config";
 
 export default function App({ Component, pageProps }) {
   const [isLoading, setIsLoading] = useState(true);
+  const [showScroll, setShowScroll] = useState(false);
 
   useEffect(() => {
     // Simulate loading time (e.g., 2 seconds)
@@ -15,6 +16,26 @@ export default function App({ Component, pageProps }) {
 
     return () => clearTimeout(timer); // Cleanup timeout
   }, []);
+
+  useEffect(() => {
+    // Show scroll-to-top button when scrolling
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowScroll(true);
+      } else {
+        setShowScroll(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <>
@@ -33,6 +54,12 @@ export default function App({ Component, pageProps }) {
       {!isLoading && (
         <Layout>
           <Component {...pageProps} />
+          {/* Scroll-to-Top Button */}
+          {showScroll && (
+            <button className="scroll-to-top" onClick={scrollToTop}>
+              ↑
+            </button>
+          )}
         </Layout>
       )}
     </>
