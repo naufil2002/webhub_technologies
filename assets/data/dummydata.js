@@ -90,48 +90,55 @@ export const testimonial = [
 export const showcase = [
   {
     id: 1,
+    title: "My Villas",
+    cover: "../images/myvillas.png",
+    catgeory: "villa Booking",
+    projectLink: "https://myvillas.in/", // Add the link here
+  },
+  {
+    id: 2,
     title: "Warsi Roofing",
     cover: "../images/warsiroofing.png",
     catgeory: "Roofing Manufacturers",
     projectLink: "https://warsiroofing.in/", // Add the link here
   },
   {
-    id: 2,
+    id: 3,
     title: "EcoMart",
     cover: "../images/s2.jpg",
     catgeory: "E-COMMERCE",
     projectLink: "https://eco-mart-chi.vercel.app/", // Add the link here
   },
   {
-    id: 3,
+    id: 4,
     title: "Sameer Tutorials",
     cover: "../images/s1.jpg",
     catgeory: "EDUCATION PLATFORM",
     projectLink: "https://sameertutorials.vercel.app/", // Add the link here
   },
   {
-    id: 4,
+    id: 5,
     title: "Apna Hotel",
     cover: "../images/s5.jpg",
     catgeory: "RESTAURENT",
     projectLink: "https://naufil2002.github.io/apna_hotel/", // Add the link here
   },
   {
-    id: 5,
+    id: 6,
     title: "Smart Trips",
     cover: "../images/s3.jpg",
     catgeory: "TRAVEL SOLUTIONS",
     projectLink: "https://smarttrips.vercel.app/", // Add the link here
   },
   {
-    id: 6,
+    id: 7,
     title: "Freelancer Portfolio",
     cover: "../images/s4.jpg",
     catgeory: "PERSONAL PORTFOLIO",
     projectLink: "https://naufils-portfolio.vercel.app/", // Add the link here
   },
   {
-    id: 7,
+    id: 8,
     title: "Music School",
     cover: "../images/s6.jpg",
     catgeory: "MUSIC PLATFORM",
