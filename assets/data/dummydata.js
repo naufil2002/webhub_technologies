@@ -92,7 +92,7 @@ export const showcase = [
     id: 1,
     title: "My Villas",
     cover: "../images/myvillas.png",
-    catgeory: "villa Booking",
+    catgeory: "Villa Booking",
     projectLink: "https://myvillas.in/", // Add the link here
   },
   {
